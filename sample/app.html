@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>RequireJS</title>
+    </head>
+    <body>
+
+        <div ng-app="myapp">
+
+        </div>
+
+        <script data-main="config" src="require.js"></script>
+        <script>
+            require(['config'], function() {
+                require(['app']);
+            });
+        </script>
+    </body>
+</html>
